@@ -28,11 +28,14 @@ public class App {
                         descriptografarMensagem(scanner, chaveSecreta);
                         break;
                     case "3":
-                        System.out.println("Saindo do programa.");
+                        exibirCreditos();
+                        break;
+                    case "4":
+                        System.out.println("Saindo do programa. Até mais!");
                         scanner.close();
                         return;
                     default:
-                        System.out.println("Opção inválida. Tente novamente.");
+                        System.out.println("Opção inválida. Por favor, tente novamente.");
                 }
             }
         } catch (Exception e) {
@@ -44,7 +47,8 @@ public class App {
         System.out.println("\nEscolha uma opção:");
         System.out.println("1. Criptografar uma mensagem");
         System.out.println("2. Descriptografar uma mensagem");
-        System.out.println("3. Sair");
+        System.out.println("3. Créditos");
+        System.out.println("4. Sair");
         System.out.print("Digite sua escolha: ");
     }
 
@@ -68,5 +72,14 @@ public class App {
         } catch (Exception e) {
             System.err.println("Erro ao descriptografar a mensagem: " + e.getMessage());
         }
+    }
+
+    private static void exibirCreditos() {
+        System.out.println("\nCréditos:");
+        System.out.println("Desenvolvido por:");
+        System.out.println("- Thiago Machado");
+        System.out.println("- Carlos Segundo ");
+        System.out.println("- Joaquim Carvalho");
+        System.out.println("- Moab Lima");
     }
 }
