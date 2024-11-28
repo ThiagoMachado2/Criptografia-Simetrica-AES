@@ -86,7 +86,6 @@ public class AppInterface {
         String creditos = "Créditos:\n- Thiago Machado\n- Carlos Segundo\n- Joaquim Carvalho\n- Moab Lima";
         JOptionPane.showMessageDialog(null, creditos, "Créditos", JOptionPane.INFORMATION_MESSAGE);
 
-        // Exibe no terminal a ação de créditos
         System.out.println("Exibindo créditos no terminal.");
     }
 }
